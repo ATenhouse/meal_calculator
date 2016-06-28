@@ -1,17 +1,3 @@
-// For your finished project you need to be able to:
-// DONE Create Patron objects which represent a single Patron.
-// DONE Add dishes to a Patron's meal
-// DONE Total up the cost of all of the patrons' meals
-// DONE Add a fixed tax percentage to the total bill
-// DONE Add a percentage tip to the total bill
-// DONE Split the bill fairly among the Patrons
-// DONE Each Patron should pay the tax on their own food
-// DONE Each Patron should pay an equal share of the tip
-// If you choose to round the amounts, you may notice that the sum 
-// of the amounts does not equal the total bill amount anymore.
-// Don't worry about that, or distribute the disrepancy in a fair way for an extra challenge.
-// Print out a total bill
-// Print a breakdown for what each Patron owes
 var Patron = function(name, dishes, tipRate) {
   this.dishes = dishes || [];
   this.name = name || "Homer";
