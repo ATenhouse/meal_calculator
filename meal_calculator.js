@@ -76,7 +76,7 @@ var pidge = new Patron("Pidge");
 var chunk = new Patron("Chunk");
 var keith = new Patron("Keith");
 var shiro = new Patron("Shiro");
-lance.addDish('Steak', 15);
+lance.addDish("Steak", 15);
 pidge.addDish("Peanut Butter Sandwich", 4);
 chunk.addDish("Another table's worth of food", 70);
 keith.addDish("Saffron sorrel",12);
