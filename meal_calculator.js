@@ -1,4 +1,4 @@
-var Patron = function(name, dishes, tipRate) {
+var Patron = function(name, dishes) {
   this.dishes = dishes || [];
   this.name = name || "Homer";
 }
@@ -8,10 +8,10 @@ Patron.prototype.addDish = function addDish(dishName, dishCost) {
     name: dishName || ''
   });
 };
-Patron.prototype.PatronSubtotal = function PatronSubtotal(){
+Patron.prototype.PatronSubtotal = function PatronSubtotal() {
   return this.dishes.reduce(function(a,b) { return a + b.cost }, 0);
 }
-Patron.prototype.setPersonalTip = function setPersonalTip(tipRate){
+Patron.prototype.setPersonalTip = function setPersonalTip(tipRate) {
   this.personal = tipRate;
 }
 Patron.prototype.print = function() {
@@ -54,7 +54,7 @@ Table.prototype.tablePrint = function tablePrint() {
   console.log("Thank you for dining with us!");
   console.log(new Array(30).join("-"));
   console.log("Group Subtotal: $%s", subtotal);
-  var taxOwed = subtotal * taxRate / this.patrons.length;
+  var taxOwed = (subtotal * taxRate) / this.patrons.length;
   console.log("Tax (%s) : $%s", this.taxRate, (subtotal * taxRate).toFixed(2));
   console.log("Total with Tax: $%s", subtotal*(1 + taxRate).toFixed(2));
   console.log(new Array(30).join("-"));
