@@ -1,8 +1,7 @@
 # meal_calculator
-A simple meal and table calculator in fulfillment of Thinkful's Node.js course.
+A simple meal and table calculator in fulfillment of [Thinkful's Node.js course.](https://www.thinkful.com/courses/learn-nodejs-online/)
 
-This is part of "lesson zero" for Thinkful's Node.JS course.
-Stated goals include:
+This is part of lesson zero" of the course. Stated goals include:
 
 1. Create diner objects which represent a single diner.
 2. Add dishes to a diner's meal
